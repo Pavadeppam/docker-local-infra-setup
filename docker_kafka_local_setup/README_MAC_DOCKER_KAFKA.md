@@ -6,7 +6,32 @@ Complete local Apache Kafka setup using Docker on Apple Silicon MacBook Air M1.
 
 ---
 
-# System Configuration
+# System Configuration & Compatibility Note
+
+## Compatibility Note
+
+This setup guide is created using Apple Silicon MacBook Air M1 with macOS Sonoma, but the same steps can also be used for other Mac systems.
+
+Supported environments include:
+
+- Apple Silicon Macs (M1 / M2 / M3)
+- Intel-based Macs
+
+For Intel-based Macs, Docker images may automatically use:
+
+```text
+linux/amd64
+```
+
+while Apple Silicon Macs use:
+
+```text
+linux/arm64
+```
+
+Docker Desktop typically handles the architecture compatibility automatically.
+
+This repository is intended to provide a reusable local enterprise-like Kafka and Docker setup for Mac-based development and proof-of-concept experimentation.
 
 ## Machine Details
 
@@ -653,35 +678,6 @@ docker container prune
 ```bash
 docker image prune
 ```
-
----
-
----
-
-# Compatibility Note
-
-This setup guide is created using Apple Silicon MacBook Air M1 with macOS Sonoma, but the same steps can also be used for other Mac systems.
-
-Supported environments include:
-
-- Apple Silicon Macs (M1 / M2 / M3)
-- Intel-based Macs
-
-For Intel-based Macs, Docker images may automatically use:
-
-```text
-linux/amd64
-```
-
-while Apple Silicon Macs use:
-
-```text
-linux/arm64
-```
-
-Docker Desktop typically handles the architecture compatibility automatically.
-
-This repository is intended to provide a reusable local enterprise-like Kafka and Docker setup for Mac-based development and proof-of-concept experimentation.
 
 ---
 
