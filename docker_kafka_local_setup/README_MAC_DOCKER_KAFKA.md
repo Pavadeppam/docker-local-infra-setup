@@ -1,8 +1,8 @@
 # README_MAC_DOCKER_KAFKA.md
 
-# Mac M1 Docker Kafka Setup Guide
+# Mac (M1/M2/M3) Docker Kafka Setup Guide
 
-Complete local Apache Kafka setup using Docker on Apple Silicon MacBook Air M1.
+Complete local Apache Kafka setup using Docker on Apple Silicon Mac.
 
 ---
 
@@ -33,7 +33,7 @@ Docker Desktop typically handles the architecture compatibility automatically.
 
 This repository is intended to provide a reusable local enterprise-like Kafka and Docker setup for Mac-based development and proof-of-concept experimentation.
 
-## Machine Details
+## Tested Machine Details 
 
 | Component    | Value               |
 | ------------ | ------------------- |
